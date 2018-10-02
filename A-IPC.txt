@@ -1,0 +1,14 @@
+
+mework 4
+Page no. 174
+March 5, 2018
+
+3. There are certain actions such as saving the registers, which happen while an interrupt is being handled. Since they cannot be expressed in higher level languages, part of interrupt handlers are written in assembly. 
+
+11. If a single threaded process is waiting for keyboard/is blocked on keyboard, it cannot fork. 
+
+31.  For a semaphone operation, the OS will disable interrupts first, and then it can read the semaphore value. If it is doing a wait, andn semaphone = 0, the calling process will be put on a list of blocked processes that are associated with the semaphore. If it is doing an up, it has to check the lust of blocked process on the semaphone. In case one or more processes are blocked, one of them is removed form that list and made runnable. Once this operation is compete, interrupts can be enabled again.
+
+35. It is expensive to eliminate the signal operation using a Boolean predicate as a parameter to a waituntil operation. The waituntil operation will constantly check the Boolean condition instead of waiting for a signal from the currently runnign process, which taken CPU cycles. However, with Hoare and Hansen scheme, proceses are awakened by signal primitive, which is more efficient for the system. 
+
+
